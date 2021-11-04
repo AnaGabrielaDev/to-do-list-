@@ -1,0 +1,40 @@
+@import url('https://www.dafont.com/pt/betty-molly.font?text=To+do+List&back=theme');
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #261C2C;
+    background-size: cover;
+}
+.main-section{
+    margin: 200px auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 450px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: #6E85B2;
+    font-family: 'Betty Molly';
+}
+.to-do{
+    height: 100px;
+}
+.checked{
+    margin: 20px;
+}
+button{
+    background-color: #8755c0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
