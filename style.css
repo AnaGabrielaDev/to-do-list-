@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'betty-molly';
-    src: url('/betty_molly/Betty Molly - Personal Use.otf');
+    src: url('./fonts/betty_molly/Betty Molly - Personal Use.otf');
 } 
 html{
     padding: 0;
