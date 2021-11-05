@@ -1,0 +1,15 @@
+Controladores :
+
+
+- Conexão (Feito)
+- Listagem (Feito)
+- Inclusão / Controller
+- Inclusão Ação no PHP
+- Exclusão / Controller
+- Exclusão Ação no PHP
+
+
+
+
+<!-- <input type="text" name="title" placeholder="Adicionar tarefa"> -->
+<!-- <button type="submit" name="insert">CADASTRAR</button> -->
