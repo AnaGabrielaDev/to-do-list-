@@ -24,10 +24,14 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
 }
+/* Alterações
+    - Inclusão de sobra no texto
+*/
 h1{
-    color: #e9b833;
-    font-family: 'betty-molly';
     font-size: 50px;
+    color: #e9b833;
+    text-shadow: 2px 2px 15px #000000;
+    font-family: 'betty-molly';
 }
 /* Alterações
     - Removi a altura da linha (height: 100px;)
