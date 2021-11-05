@@ -7,12 +7,15 @@ html{
     margin: 0;
 }
 body{
-    background-image: url('background.jpeg');
+    background-image: url('./assets/background.jpeg');
     background-size: cover;
 }
+/* Alterações
+    - Largura (width:450px; - width: 550px;)
+*/
 .main-section{
+    width: 550px;
     margin: 200px auto;
-    width: 450px;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -26,24 +29,45 @@ h1{
     font-family: 'betty-molly';
     font-size: 50px;
 }
+/* Alterações
+    - Removi a altura da linha (height: 100px;)
+    para remover o espaço grande que tinha entre uma linha e outra
+    - Coloquei flexível para ficar todos em uma linha (de display até justify)
+*/
 .to-do{
-    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Alterações
+    - Defini uma largura para a linha do texto (width: 240px;)
+    - Defini o texto alinhado para esquerda
+    - Coloquei ele para esconder o texto, se o texto for maior que a linha (de text-overflow até white-space)
+*/
+.title{
+    width: 240px;
+    font-size: 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
 }
 .checked{
     margin: 20px;
 }
 button{
     display: inline-block;
-        padding: 08px 08px;
-        font-size: 10px;
-        cursor: pointer;
-        text-align: center;	
-        text-decoration: none;
-        outline: none;
-        color: #fffffe;
-        background-color: #ff8906;
-        border: none;
-        border-radius: 10px;
-      }
+    padding: 08px 08px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fffffe;
+    background-color: #ff8906;
+    border: none;
+    border-radius: 10px;
+}
       
     
