@@ -4,7 +4,7 @@
     // ID do registro
     $id = $_GET['id'];
     // Realizando query
-    mysqli_query($conn,"DELETE FROM task where id='$id'");
+    mysqli_query($conn,"UPDATE `task` SET `checked` = '1' WHERE `task`.`id` = $id");
     // Finalizando query
     mysqli_close($conn);
     // Retornar para a listagem

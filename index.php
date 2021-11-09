@@ -53,22 +53,36 @@
             $explode = explode('-', $date);
             // Data de criação
             $create_at = $explode[1] . '-' . $explode[2] . '-' . $explode[0];
+            
         ?>
         <div class="to-do">
-            <span class ="title">
+            <span class ="<?php echo ($data['checked'] == 1) ? 'title checked' : 'title' ?>">
                 <?php
                     echo $data['title'];
+                    
                 ?>
             </span>
-            <small class ="date">  
+            <small class ="<?php echo ($data['checked'] == 1) ? 'date checked' : 'date' ?>">  
                 <?php
+                    // Retornar data
                     echo $create_at;
                 ?>
             </small>
             <div class="options buttons">
-                <a href ="./controllers/update.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');">
-                    <input class ="checked" type="checkbox">
+                <?php
+                    if($data['checked'] < 1):
+                ?>
+                <a href ="./controllers/update.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');" class="check">
+                        
                 </a>
+                <?php 
+                    else:
+                ?>
+                <input type="checkbox" checked disabled> 
+                <?php 
+                    endif;
+                ?>
+
                 <span class="delete"><a href ="./controllers/delete.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');"><i class="fas fa-trash-alt"></i></a></span>
             </div>
         </div>

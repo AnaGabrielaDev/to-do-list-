@@ -161,3 +161,13 @@ small{
     color: rgba(0,0,0,0.3);
     cursor: pointer;
 }
+.checked{
+    text-decoration: line-through;
+}
+.check{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+}
