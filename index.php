@@ -1,3 +1,7 @@
+<?php
+    // Inclui a conexão
+    require('./controllers/connection.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,14 +22,26 @@
                 <button type="submit" name="insert">CADASTRAR</button>
             </form>
         </div>
+        <?php 
+            // Pesquisa
+            $query_count = "SELECT COUNT(*) id FROM task";
+            // Criando a consulta ao Banco de dados
+            $search_count = mysqli_query($conn, $query_count);
+            // Verificar se há registros
+            $rows = mysqli_fetch_array($search_count);
+            // Verificar se há registros
+            if($rows['id'] > 0):
+                
+        ?>
         <ul class="columns">
             <li class="task tsk">Tarefa</li>
             <li class="date dat">Data</li>
             <li class="options opt">Opções</li>
         </ul>
         <?php 
-            // Inclui a conexão
-            require('./controllers/connection.php');
+            endif;
+        ?>
+        <?php 
             // Pesquisa
             $query = "SELECT * FROM task ORDER BY id ASC";
             // Criando a consulta ao Banco de dados
