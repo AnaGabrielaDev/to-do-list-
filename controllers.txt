@@ -1,9 +1,0 @@
-Controladores :
-
-
-- Conexão (Feito)
-- Listagem (Feito)
-- Inclusão / Controller
-- Inclusão Ação no PHP
-- Exclusão / Controller (Feito)
-- Exclusão Ação no PHP (Feito)

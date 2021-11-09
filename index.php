@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <div class="Background"></div> -->
     <div class="main-section">
         <h1>To-Do List</h1>
         <div class="sub-section">
@@ -44,7 +45,7 @@
             </small>
             <div class="options buttons">
                 <input class ="checked" type="checkbox">
-                <span class="delete"><a href ="./controllers/deletar.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você dezeja mesmo deletar a tarefa :<?php echo $data['date'];?>');"><i class="fas fa-trash-alt"></i></a></span>
+                <span class="delete"><a href ="./controllers/deletar.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você dezeja mesmo deletar a tarefa : <?php echo $data['title'];?>');"><i class="fas fa-trash-alt"></i></a></span>
             </div>
         </div>
         <?php
