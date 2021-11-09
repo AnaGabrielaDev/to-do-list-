@@ -13,7 +13,7 @@
     <div class="main-section">
         <h1>To-Do List</h1>
         <div class="sub-section">
-            <form action="">
+            <form method="post" action="./controllers/insert.php">
                 <input type="text" name="title" placeholder="Adicionar tarefa">
                 <button type="submit" name="insert">CADASTRAR</button>
             </form>
