@@ -52,7 +52,7 @@
             // Explode - Separação
             $explode = explode('-', $date);
             // Data de criação
-            $create_at = $explode[1] . '-' . $explode[2] . '-' . $explode[0];
+            $create_at = $explode[2] . '-' . $explode[1] . '-' . $explode[0];
             
         ?>
         <div class="to-do">
