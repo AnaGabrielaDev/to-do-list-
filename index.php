@@ -66,8 +66,10 @@
                 ?>
             </small>
             <div class="options buttons">
-                <input class ="checked" type="checkbox">
-                <span class="delete"><a href ="./controllers/deletar.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você dezeja mesmo deletar a tarefa : <?php echo $data['title'];?>');"><i class="fas fa-trash-alt"></i></a></span>
+                <a href ="./controllers/update.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');">
+                    <input class ="checked" type="checkbox">
+                </a>
+                <span class="delete"><a href ="./controllers/delete.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');"><i class="fas fa-trash-alt"></i></a></span>
             </div>
         </div>
         <?php
