@@ -31,6 +31,12 @@
             // Criando a consulta ao Banco de dados
             $search = mysqli_query($conn, $query);
             while($data = mysqli_fetch_array($search)):
+            // Data
+            $date = $data['date'];
+            // Explode - Separação
+            $explode = explode('-', $date);
+            // Data de criação
+            $create_at = $explode[1] . '-' . $explode[2] . '-' . $explode[0];
         ?>
         <div class="to-do">
             <span class ="title">
@@ -40,7 +46,7 @@
             </span>
             <small class ="date">  
                 <?php
-                    echo $data['date'];
+                    echo $create_at;
                 ?>
             </small>
             <div class="options buttons">

@@ -4,7 +4,7 @@
     // Verificar se clicou no botão subimit
     if (isset($_POST['insert'])){
         // Data de inclusão
-        $date = date("d.m.Y");
+        $date = date("Y-m-d");
         // Nome da atividade
         $title = $_POST['title'];
         // Realizando query
