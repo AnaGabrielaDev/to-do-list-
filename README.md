@@ -1,22 +1,4 @@
-<div align="center" id="top"> 
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fto-do-list-gifs&psig=AOvVaw07-V8hucVCdAZAya4CRJPP&ust=1637185203174000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDh66bsnfQCFQAAAAAdAAAAABAO" alt="To Do List" />
-
-  &#xa0;
-
-</div>
-
 <h1 align="center">To Do List</h1>
-
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/to-do-list?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/to-do-list?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{AnaGabrielaDev}}/to-do-list?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/{{AnaGabrielaDev}}/to-do-list?color=56BEB8">
-
-</p>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -29,6 +11,8 @@
 ## :dart: About ##
 
 a proposed activity at the college in the web development chair to challenge our knowledge and experience the process of a development team. this is a crud where it is possible to use a to-do list :)
+<img src="https://user-images.githubusercontent.com/72721343/142073028-7bd21a66-5567-431c-9eaf-5a9748f51592.mp4">
+
 
 ## :rocket: Technologies ##
 
