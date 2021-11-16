@@ -8,9 +8,10 @@
         // Nome da atividade
         $title = $_POST['title'];
         // Realizando query
+        if ($title > 3){
         mysqli_query($conn, "INSERT INTO task(title, date, checked) VALUES('$title', '$date', false)");
         // Finalizar query
-        mysqli_close($conn);
+        mysqli_close($conn);}
         // Retornar para a listagem
         header('location:../index.php');
     }
