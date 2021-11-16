@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <!-- <div class="Background"></div> -->
     <div class="main-section">
-        <h1>To-Do List</h1>
+        <h1 class="maquina-escrever">To-Do List</h1>
         <div class="sub-section">
             <form method="post" action="./controllers/insert.php">
                 <input type="text" name="title" placeholder="Adicionar tarefa">
-                <button type="submit" name="insert">CADASTRAR</button>
+                <button type="submit" name="insert" class="botaozinho">CADASTRAR</button>
             </form>
         </div>
         <?php 
@@ -72,13 +74,13 @@
                 <?php
                     if($data['checked'] < 1):
                 ?>
-                <a href ="./controllers/update.php?id=<?php echo $data['id'];?>" onclick="return confirm('Você deseja mesmo deletar a tarefa : <?php echo $data['title'];?>');" class="check">
+                <a href ="./controllers/update.php?id=<?php echo $data['id'];?>" class="check">
                         
                 </a>
                 <?php 
                     else:
                 ?>
-                <input type="checkbox" checked disabled> 
+                <input type="checkbox" onclick="window.location = './controllers/update.php?id=<?php echo $data['id'];?>'" checked> 
                 <?php 
                     endif;
                 ?>

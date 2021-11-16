@@ -1,36 +1,49 @@
 /* Importação e criação de uma fonte */
-@font-face{
+
+@font-face {
     font-family: 'betty-molly';
     src: url('./fonts/betty_molly/Betty Molly - Personal Use.otf');
-} 
+}
+
+
 /* HTML */
-html{
+
+html {
     padding: 0;
     margin: 0;
 }
+
+
 /* Corpo do HTML */
-body{
+
+body {
     background-image: url('./assets/background.jpeg');
     background-size: cover;
 }
 
-
-.Background{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
-    background: url('./assets/background.jpeg') no-repeat;
-	background-size: cover; 
+:root {
+    --main-color: #ff8906;
 }
+
+.Background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background: url('./assets/background.jpeg') no-repeat;
+    background-size: cover;
+}
+
+
 /* Seção Principal
     - Largura (width:450px; - width: 550px;)
 */
-.main-section{
+
+.main-section {
     width: 700px;
     margin: 200px auto;
     justify-content: center;
@@ -39,135 +52,224 @@ body{
     flex-direction: column;
     background: rgba(1, 1, 1, 0.07);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
+
+
 /* Formulário */
-form{
+
+form {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
+
 /* Input - Campo de adição de tarefa
     - Largura alterada para 400px
 */
-input[type='text']{
+
+input[type='text'] {
     width: 450px;
     outline: none;
     padding: 1vh 2vw;
     margin-left: 0px;
     border-radius: 0.3vw;
-    border: 0.1vw solid rgba(0,0,0,0.3);
+    border: 0.1vw solid rgba(0, 0, 0, 0.3);
 }
+
+
 /* Botão de cadastrar tarefa */
-button{
+
+button {
     display: inline-block;
     padding: 1.3vh 2vw;
     font-size: 10px;
     cursor: pointer;
-    text-align: center;	
+    text-align: center;
     text-decoration: none;
     outline: none;
     color: #fffffe;
-    background-color: #ff8906;
+    background-color: var(--main-color);
     border: none;
     border-radius: 10px;
 }
+
+
 /* Colunas da tabela - NEGRITO */
-.columns{
+
+.columns {
     width: 660px;
     display: flex;
     margin-left: 0;
     flex-direction: row;
 }
 
+
 /* Linhas das dolunas */
-li{
+
+li {
     font-weight: 600;
     list-style: none;
     text-align: center;
 }
+
+
 /* Tarefa */
-.task{
+
+.task {
     width: 300px;
 }
-.task.tsk{
+
+.task.tsk {
     margin-left: -3px;
     margin-right: 50px;
+    font-family: 'betty-molly';
+    font-size: 40px;
 }
+
+
 /* Data */
-.date{
+
+.date {
     width: 100px;
 }
-.date.dat{
+
+.date.dat {
     margin-left: 18px;
+    font-family: 'betty-molly';
+    font-size: 40px;
 }
+
+
 /* Opções - Div*/
-.options{
+
+.options {
     width: 100px;
 }
-.options.opt{
+
+.options.opt {
     margin-left: 54px;
+    font-family: 'betty-molly';
+    font-size: 40px;
 }
-.options.buttons{
+
+.options.buttons {
     width: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 /* Alterações
     - Inclusão de sobra no texto
 */
-h1{
+
+h1 {
     font-size: 50px;
-    color: #e9b833;
+    color: var(--main-color);
     text-shadow: 2px 2px 15px #000000;
     font-family: 'betty-molly';
 }
+
+
 /* Alterações
     - Removi a altura da linha (height: 100px;)
     para remover o espaço grande que tinha entre uma linha e outra
     - Coloquei flexível para ficar todos em uma linha (de display até justify)
 */
-.to-do{
+
+.to-do {
     width: 700px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+
 /* Alterações
     - Defini uma largura para a linha do texto (width: 240px;)
     - Defini o texto alinhado para o centro
     - Coloquei ele para esconder o texto, se o texto for maior que a linha (de text-overflow até white-space)
     - Tamanho da fonte (20px - 18px)
 */
-.title{
+
+.title {
     width: 300px;
     font-size: 16px;
     text-align: center;
     text-overflow: ellipsis;
-    overflow: hidden; 
+    overflow: hidden;
     white-space: nowrap;
-    margin-left: -20px;;
+    margin-left: -20px;
+    ;
 }
-small{
+
+small {
     margin: 10px;
     font-size: 16px;
 }
 
-
-.delete a{
-    color: rgba(0,0,0,0.3);
+.delete a {
+    color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
-.checked{
+
+.checked {
     text-decoration: line-through;
 }
-.check{
+
+.check {
     width: 10px;
     height: 10px;
     margin-left: 5px;
     background-color: white;
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+/* efeito */
+
+.maquina-escrever::after {
+    content: "|";
+    margin-left: 3px;
+    opacity: 1;
+    -webkit-animation: piscar 1s infinite;
+    animation: piscar 1s infinite;
+}
+
+@-webkit-keyframes piscar {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes piscar {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.botaozinho {
+    border-color: var(--main-color);
+    color: rgb(22, 6, 6);
+    box-shadow: 0 0 40px 40px #dba634 inset, 0 0 0 0 #251616;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    font-family: 'Pacifico', cursive;
+}
+
+.botaozinho:hover {
+    box-shadow: 0 0 10px 0 var(--main-color) inset, 0 0 10px 4px var(--main-color);
 }
