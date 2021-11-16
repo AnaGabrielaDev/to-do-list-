@@ -29,6 +29,8 @@
 ## :dart: About ##
 
 a proposed activity at the college in the web development chair to challenge our knowledge and experience the process of a development team. this is a crud where it is possible to use a to-do list :)
+<img src="https://user-images.githubusercontent.com/72721343/142072249-296569bc-704b-4649-b21d-fe33ef129ca6.png">
+
 
 ## :rocket: Technologies ##
 
