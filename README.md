@@ -1,10 +1,3 @@
-<div align="center" id="top"> 
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fto-do-list-gifs&psig=AOvVaw2QyDYgyDjy0yadIoE2iazd&ust=1637186466472000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMjTyoDxnfQCFQAAAAAdAAAAABAD" alt="To Do List" />
-
-  &#xa0;
-
-</div>
-
 <h1 align="center">To Do List</h1>
 
 <p align="center">
