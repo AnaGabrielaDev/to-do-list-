@@ -23,12 +23,12 @@ The following tools were used in this project:
 - [PHP](https://www.php.net/)
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+## :memo: License || Students ##
 
 
-Made by <a>Ana Gabriela, Helen Cris, Leo Max, Pedro Freitas, Gerdesson, Henrique</a>
+
+
+Made by <a>Ana Gabriela da Silva Bezerra, Helen Cris Morais Tavares Fernandes, Francisco Leonardo Marques Gomes, Pedro Freitas Albuquerque, Gerdeson de Souza Pinto, Carlos Henrique Marques gomes</a>
 
 &#xa0;
 
